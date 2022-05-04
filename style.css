@@ -112,3 +112,7 @@ footer{
 img{
     margin-bottom: 0.1875rem;
 }
+.footer-image{
+    max-width: 11.625rem;
+    height: auto;
+}
