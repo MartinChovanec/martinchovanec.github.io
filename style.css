@@ -1,10 +1,10 @@
-body{
+body {
     background-image: url(mobile.png);
     background-repeat: no-repeat;
     background-position-x: 0;
     background-position-y: 2px;
 }
-body > *{
+body > * {
     mix-blend-mode: difference;
 }
 body {
@@ -27,22 +27,22 @@ h1 {
     line-height: 1.125;
     margin-top: 2.3rem;
     margin-bottom: 1.6rem;
-} 
+}
 h2,
-h3{
+h3 {
     line-height: 1.136;
 }
 h2 {
     font-size: 3rem;
     margin-top: 4rem;
-    margin-bottom:1.5rem;
+    margin-bottom: 1.5rem;
 }
 h3 {
     font-size: 2.25rem;
     margin-top: 3rem;
     margin-bottom: 1.5rem;
 }
-nav a{
+nav a {
     font-size: 1rem;
     line-height: 1.22;
     text-transform: uppercase;
@@ -56,7 +56,6 @@ header {
     padding-top: 0.75rem;
     padding-bottom: 5.75rem;
 }
-
 .heading {
     text-transform: uppercase;
     display: block;
@@ -68,12 +67,12 @@ header {
     border-left: 2px solid;
     margin-bottom: 1.5rem;
 }
-.heading-blue{
+.heading-blue {
     color: #bee8ff;
 }
 ul {
     list-style-type: "— ";
-    padding-left:1.6875rem;
+    padding-left: 1.6875rem;
     margin-bottom: 4rem;
 }
 a {
@@ -89,7 +88,7 @@ a {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
 }
-.header-nav{
+.header-nav {
     padding-left: 0.875rem;
     padding-right: 0.875rem;
 }
@@ -102,17 +101,17 @@ main {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
 }
-footer{
+footer {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
 }
-.heading-contacts{
+.heading-contacts {
     margin-top: -2rem;
 }
-img{
+img {
     margin-bottom: 0.1875rem;
 }
-.footer-image{
+.footer-image {
     max-width: 11.625rem;
     height: auto;
 }
