@@ -110,6 +110,8 @@ footer {
 }
 img {
     margin-bottom: 0.1875rem;
+    max-width: 100%;
+    height: auto;
 }
 .footer-image {
     max-width: 11.625rem;
