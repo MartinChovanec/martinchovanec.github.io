@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+/*
 body {
     background-image: url(mobile.png);
     background-repeat: no-repeat;
@@ -7,6 +11,7 @@ body {
 body > * {
     mix-blend-mode: difference;
 }
+*/
 body {
     background-color: #0066a5;
     color: #ffffff;
