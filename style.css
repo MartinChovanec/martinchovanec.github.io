@@ -11,16 +11,23 @@ body {
 body > * {
     mix-blend-mode: difference;
 }
+viewport width
+udělat maxwidth v headeru
+flexbox pro obrázky
 */
 body {
-    background-color: #0170AF;
+    background-color: #0170af;
     color: #ffffff;
     font-family: "Candara", sans-serif;
     font-weight: 700;
     font-size: 1.375rem;
     line-height: 1.4545;
     margin: 0;
-    background-image: linear-gradient(to top,#003F63 0,#0170AF00 25rem);
+    background-image: linear-gradient(to top, #003f63 0, #0170af00 25rem),url(main-bg.png);
+    background-size: 100%,112rem;
+    background-position: 0,32% 0;
+    background-repeat: repeat;
+}
 }
 h1,
 h2,
@@ -74,10 +81,15 @@ img {
     background-color: #ab2e0a;
     padding-top: 0.75rem;
     padding-bottom: 5.75rem;
+    background-image: url(hero-bottom.png),url(hero-bg.png);
+    background-size: 112rem,112rem;
+    background-position: 32% 100%,32% 0;
+    background-repeat: no-repeat,repeat;
 }
 .header-text {
-    padding-left: 1.25rem;
     padding-right: 1.25rem;
+    padding-bottom: 4rem;
+    padding-left: 1.25rem;
 }
 .heading {
     display: block;
