@@ -11,8 +11,6 @@ body {
 body > * {
     mix-blend-mode: difference;
 }
-viewport width
-flexbox pro obrázky
 */
 body {
     background-color: black;
@@ -182,4 +180,9 @@ img {
     margin-right: auto;
     max-width: 70rem;
     flex-wrap: wrap;
+}
+.main-footer{
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
 }
