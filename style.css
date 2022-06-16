@@ -12,21 +12,16 @@ body > * {
     mix-blend-mode: difference;
 }
 viewport width
-udělat maxwidth v headeru
 flexbox pro obrázky
 */
 body {
-    background-color: #0170af;
+    background-color: black;
     color: #ffffff;
     font-family: "Candara", sans-serif;
     font-weight: 700;
     font-size: 1.375rem;
     line-height: 1.4545;
     margin: 0;
-    background-image: linear-gradient(to top, #003f63 0, #0170af00 25rem),url(main-bg.png);
-    background-size: 100%,112rem;
-    background-position: 0,32% 0;
-    background-repeat: repeat;
 }
 }
 h1,
@@ -64,7 +59,6 @@ a {
     color: #b6e5ff;
 }
 p {
-    margin-top: 2rem;
     margin-bottom: 0;
 }
 main {
@@ -73,7 +67,7 @@ main {
     padding-right: 1.25rem;
 }
 img {
-    margin-bottom: 0.1875rem;
+    margin-bottom: 0.3875rem;
     max-width: 100%;
     height: auto;
 }
@@ -90,6 +84,7 @@ img {
     padding-right: 1.25rem;
     padding-bottom: 4rem;
     padding-left: 1.25rem;
+    max-width: 29.125rem;
 }
 .heading {
     display: block;
@@ -138,4 +133,53 @@ img {
 }
 .footer-image {
     max-width: 11.625rem;
+}
+.project-alpha{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 69.5rem;
+    gap: 3rem;
+}
+.description-alpha{
+    max-width: 20rem;
+}
+.project-beta{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 63rem;
+    gap: 3rem;
+}
+.description-beta{
+    max-width: 20rem;
+}
+.project-beta>img{
+    order: 2;
+}
+.project-beta>p{
+    order: 1;
+}
+.project-gama{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 69.5rem;
+    gap: 3rem;
+}
+.description-gama{
+    max-width: 20rem;
+}
+.all{
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to top, #003f63 0, #0170af00 25rem),url(main-bg.png);
+    background-size: 100%,112rem;
+    background-position: 0,32% 0;
+    background-repeat: repeat;
+}
+.introduction{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70rem;
+    flex-wrap: wrap;
 }
