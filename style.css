@@ -67,10 +67,17 @@ p {
 }
 main {
     margin-top: 3rem;
-    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: clamp(1.25rem, 0.4643rem + 3.9286vw, 4rem);
     padding-right: clamp(1.25rem, 0.4643rem + 3.9286vw, 4rem);
 }
+/*@media only screen and (min-width: 1150px) {
+    .main  {
+        max-width: 88rem;
+    }
+} 
+*/ 
 img {
     margin-bottom: 0.3875rem;
     max-width: 100%;
@@ -89,7 +96,7 @@ img {
 } 
 .header-text {
     padding-bottom: 5rem;
-    max-width: 29.125rem;
+    max-width: 27.125rem;
 }
 /*
 @media only screen and (min-width: 425px) {
@@ -202,12 +209,35 @@ span.heading::before {
 .footer-image {
     max-width: 11.625rem;
 }
+@media only screen and (min-width: 1150px) {
+    .projects  {
+        margin-right: auto;
+        margin-left: auto;
+    }
+} 
 .project-alpha{
     display: flex;
     flex-wrap: wrap;
     max-width: 69.5rem;
     gap: 3rem;
 }
+@media only screen and (min-width: 763px) and (max-width:1440px) {
+    .project-alpha>img  {
+        order:2;
+        max-width: clamp(20rem, -14.8983rem + 69.7966vw, 47.875rem);
+        /* 800-1440px ; 20rem - 47,875rem */
+    }
+} 
+@media only screen and (max-width: 762px) {
+    .project-alpha>img  {
+        height: 20rem;
+    }
+}   
+@media only screen and (min-width: 763px) and (max-width:1440px){
+    .project-alpha>.description-alpha  {
+        order:1;
+    }
+}  
 @media only screen and (min-width: 1150px) {
     .project-alpha  {
         display: flex;
@@ -216,7 +246,7 @@ span.heading::before {
         gap: 3rem;
 
     }
-}   
+} 
 .description-alpha{
     max-width: 20rem;
 }
@@ -246,12 +276,12 @@ span.heading::before {
     width: 100%;
     object-fit: cover;
 }
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1180px) {
     .project-image {
         max-width: 47.875rem;
         height: auto;
     }
-}    
+}   
 .description-gama{
     max-width: 20rem;
 }
