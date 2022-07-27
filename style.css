@@ -249,8 +249,6 @@ span.heading::before {
 @media only screen and (min-width:1440px) {
     .project-alpha>img  {
         order: initial;
-        max-width: none;
-        height: auto;
     }
 }
 @media only screen and (min-width: 763px){
@@ -278,23 +276,88 @@ span.heading::before {
 .project-beta{
     display: flex;
     flex-wrap: wrap;
-    max-width: 63rem;
+    max-width: 69.5rem;
     gap: 3rem;
+}
+.project-beta>img{
+    height: 20rem;
+}
+@media only screen and (min-width: 763px){
+    .project-beta>img  {
+        order:2;
+        max-width: clamp(20rem, -14.8983rem + 69.7966vw, 47.875rem);
+        /* 800-1440px ; 20rem - 47,875rem */
+    }
+}
+@media only screen and (min-width:1440px) {
+    .project-beta>img  {
+        order: 2;
+    }
+}
+@media only screen and (min-width: 763px){
+    .project-beta>.description-beta  {
+        order: 1;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .project-beta>.description-beta  {
+        order: initial;
+    }
+}
+@media only screen and (min-width: 1150px) {
+    .project-beta  {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 69.5rem;
+        gap: 3rem;
+
+    }
 }
 .description-beta{
     max-width: 20rem;
-}
-.project-beta>img{
-    order: 2;
-}
-.project-beta>p{
-    order: 1;
 }
 .project-gama{
     display: flex;
     flex-wrap: wrap;
     max-width: 69.5rem;
     gap: 3rem;
+}
+.project-gama>img{
+    height: 20rem;
+}
+@media only screen and (min-width: 763px){
+    .project-gama>img  {
+        order:2;
+        max-width: clamp(20rem, -14.8983rem + 69.7966vw, 47.875rem);
+        /* 800-1440px ; 20rem - 47,875rem */
+    }
+}
+@media only screen and (min-width:1440px) {
+    .project-gama>img  {
+        order: initial;
+    }
+}
+@media only screen and (min-width: 763px){
+    .project-gama>.description-gama  {
+        order: 1;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .project-gama>.description-gama  {
+        order: initial;
+    }
+}
+@media only screen and (min-width: 1150px) {
+    .project-gama  {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 69.5rem;
+        gap: 3rem;
+
+    }
+}
+.description-gama{
+    max-width: 20rem;
 }
 .project-image{
     max-width: 20rem;
@@ -306,9 +369,6 @@ span.heading::before {
         max-width: 47.875rem;
         height: auto;
     }
-}
-.description-gama{
-    max-width: 20rem;
 }
 .all{
     max-width: 90rem;
