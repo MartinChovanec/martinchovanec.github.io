@@ -408,3 +408,11 @@ span.heading::before {
     background-position: 0,32% 0;
     background-repeat: repeat;
 }
+@media only screen and (min-width: 850px) {
+    .picture-contacts  {
+        display: flex;
+        gap: 3rem;
+        padding-bottom: 5rem;
+
+    }
+}
