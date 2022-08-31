@@ -1,17 +1,6 @@
 * {
     box-sizing: border-box;
 }
-/*
-body {
-    background-image: url(design-mobile.png);
-    background-repeat: no-repeat;
-    background-position-x: 0;
-    background-position-y: 2px;
-}
-body > * {
-    mix-blend-mode: difference;
-}
-*/
 body {
     background-color: black;
     color: #ffffff;
@@ -35,8 +24,8 @@ h1 {
 }
 @media only screen and (min-width: 1024px) {
     h1 {
-      font-size: 6.875rem;
-      line-height: 1;
+        font-size: 6.875rem;
+        line-height: 1;
     }
 }
 h2,
@@ -71,7 +60,7 @@ main {
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
-    padding-left: clamp(1.25rem, 0.3333rem + 4.0741vw, 4rem);  /* 360px - 1440px & 1.25rem - 4rem */
+    padding-left: clamp(1.25rem, 0.3333rem + 4.0741vw, 4rem); /* 360px - 1440px & 1.25rem - 4rem */
     padding-right: clamp(1.25rem, 0.3333rem + 4.0741vw, 4rem);
 }
 img {
@@ -83,10 +72,10 @@ img {
     background-color: #ab2e0a;
     padding-top: 0.75rem;
     padding-bottom: 5.75rem;
-    background-image: url(hero-bottom.png),url(hero-bg.png);
-    background-size: 112rem,112rem;
-    background-position: 32% 100%,32% 0;
-    background-repeat: no-repeat,repeat;
+    background-image: url(hero-bottom.png), url(hero-bg.png);
+    background-size: 112rem, 112rem;
+    background-position: 32% 100%, 32% 0;
+    background-repeat: no-repeat, repeat;
     overflow: hidden;
 }
 .header-content {
@@ -102,13 +91,13 @@ img {
     max-width: 27.125rem;
 }
 @media only screen and (min-width: 1024px) {
-    .header-text  {
+    .header-text {
         max-width: 32rem;
         padding-bottom: 6rem;
     }
 }
 @media only screen and (min-width: 1440px) {
-    .header-text  {
+    .header-text {
         padding-bottom: 7rem;
     }
 }
@@ -124,7 +113,7 @@ img {
     margin-bottom: 1.5rem;
     padding-top: 0.3rem;
 }
-@media only screen and (min-width: 1240px){
+@media only screen and (min-width: 1240px) {
     .heading {
         padding-left: 0;
         border-left: 0;
@@ -133,18 +122,18 @@ img {
         align-items: center;
     }
 }
-@media only screen and (min-width: 1240px){
-span.heading::before {
-    content: " ";
-    width: 4.5rem;
-    display: inline-block;
-    background-color: white;
-    height: 2px;
-    margin-bottom: 0.3rem;
+@media only screen and (min-width: 1240px) {
+    span.heading::before {
+        content: " ";
+        width: 4.5rem;
+        display: inline-block;
+        background-color: white;
+        height: 2px;
+        margin-bottom: 0.3rem;
     }
 }
 @media only screen and (min-width: 1240px) {
-    .heading  {
+    .heading {
         font-size: 1.375rem;
         line-height: 1.22;
     }
@@ -163,7 +152,7 @@ span.heading::before {
     padding-right: calc(var(--nav-space-x) - var(--link-space-x));
 }
 @media only screen and (min-width: 1200px) {
-    .navigation  {
+    .navigation {
         margin-left: auto;
         padding-left: calc(1.5rem - var(--link-space-x));
         padding-right: calc(1.5rem - var(--link-space-x));
@@ -181,13 +170,16 @@ span.heading::before {
     text-decoration: none;
     padding: 0.5rem var(--link-space-x);
 }
+.list-group{
+    max-width: 27.125rem;
+}
 .footer {
     box-sizing: content-box;
     max-width: 69.5rem;
     margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
-    padding-left: clamp(1.25rem, 0.3333rem + 4.0741vw, 4rem);  /* 360px - 1440px & 1.25rem - 4rem */
+    padding-left: clamp(1.25rem, 0.3333rem + 4.0741vw, 4rem); /* 360px - 1440px & 1.25rem - 4rem */
     padding-right: clamp(1.25rem, 0.3333rem + 4.0741vw, 4rem);
     padding-bottom: 1rem;
 }
@@ -201,85 +193,143 @@ span.heading::before {
     max-width: 11.625rem;
 }
 @media only screen and (min-width: 1150px) {
-    .projects  {
+    .projects {
         margin-right: auto;
         margin-left: auto;
     }
 }
-.project{
+.project {
     display: flex;
     flex-wrap: wrap;
     align-items: start;
-    max-width: 69.5rem; 
+    max-width: 69.5rem;
     gap: 3rem;
 }
-.project-image  {
+.project-image {
     width: 100%;
-    height: 20rem;    
+    height: 20rem;
     display: block;
     object-fit: cover;
 }
-@media only screen and (min-width: 763px){
+@media only screen and (min-width: 763px) {
     .project-image {
-        order:2;
+        order: 2;
         /* max-width: clamp(20rem, -14.8983rem + 69.7966vw, 47.875rem); */
         /* 800-1440px ; 20rem - 47,875rem */
     }
 }
-@media only screen and (min-width:1440px) {
-    .project-image  {
+@media only screen and (min-width: 1440px) {
+    .project-image {
         order: initial;
     }
 }
-@media only screen and (min-width: 763px){
-    .project .description  {
+@media only screen and (min-width: 763px) {
+    .project .description {
         order: 1;
     }
 }
-@media only screen and (min-width: 1440px){
-    .project .description  {
+@media only screen and (min-width: 1440px) {
+    .project .description {
         order: initial;
     }
 }
 @media only screen and (min-width: 1024px) {
-    .project  {
+    .project {
         flex-wrap: nowrap;
     }
 }
-.description{
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: max(55vw,20rem);
-}
-@media only screen and (min-width: 1024px){
-.description{
-    flex-basis: 20rem;
+@media only screen and (min-width: 300px) {
+    .personal-website-image {
+        object-position: 14% 50%;
     }
 }
-.picture{
+@media only screen and (min-width: 800px) {
+    .personal-website-image {
+        object-position: 14% 5%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .personal-website-image {
+        object-position: 59% 5%;
+    }
+}
+@media only screen and (min-width: 300px) {
+    .ghc-website-image {
+        object-position: 24% 50%;
+    }
+}
+@media only screen and (min-width: 450px) {
+    .ghc-website-image {
+        object-position: 35% 5%;
+    }
+}
+@media only screen and (min-width: 550px) {
+    .ghc-website-image {
+        object-position: 50% 5%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .ghc-website-image {
+        object-position: 20% 5%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .ghc-website-image {
+        object-position: 50% 50%;
+    }
+}
+@media only screen and (min-width: 300px) {
+    .calculator-website-image {
+        object-position: 10% 50%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    .calculator-website-image {
+        object-position: 14% 5%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .calculator-website-image {
+        object-position: 39% 5%;
+    }
+}
+.description {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: max(55vw, 20rem);
+}
+@media only screen and (min-width: 1024px) {
+    .description {
+        flex-basis: 20rem;
+    }
+}
+.picture {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
 }
-@media only screen and (min-width:1024px) {
-    .project-picture-beta  {
+@media only screen and (min-width: 1024px) {
+    .project-picture-beta {
         order: 2;
     }
 }
-.all{
+.first-par-coffee {
+    max-width: clamp(25.75rem, 20.4694rem + 18.3673vw, 37rem);
+    /*460-1440 px ; 25.75 rem - 37 rem */
+}
+.all {
     max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to top, #003f63 0, #0170af00 25rem),url(main-bg.png);
-    background-size: 100%,112rem;
-    background-position: 0,32% 0;
+    background-image: linear-gradient(to top, #003f63 0, #0170af00 25rem), url(main-bg.png);
+    background-size: 100%, 112rem;
+    background-position: 0, 32% 0;
     background-repeat: repeat;
 }
 @media only screen and (min-width: 850px) {
-    .picture-contacts  {
+    .picture-contacts {
         display: flex;
         gap: 3rem;
         padding-bottom: 5rem;
-
     }
 }
